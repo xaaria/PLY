@@ -1,0 +1,13 @@
+... ...
+... how many legs in total in barn animals? ...
+... ...
+sheet BARN = {
+... chickens, cows, spiders ...
+      4.0,       2.0,     1.0
+}
+
+function Total_legs[ SS : sheet ] return scalar is
+  return (SS'A1 * 2.0 ) + (SS'A2 * 4.0) + (SS'A3 * 8.0)
+end
+
+print_scalar !Total legs:! Total_legs[ BARN ]
